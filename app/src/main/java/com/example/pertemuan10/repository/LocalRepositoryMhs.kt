@@ -26,5 +26,10 @@ class LocalRepositoryMhs (
         return mahasiswaDao.deleteMahasiswa(mahasiswa)
     }
 
+    //update
+    override suspend fun updateMhs(mahasiswa: Mahasiswa) {
+        return mahasiswaDao.updateMahasiswa(mahasiswa)
+    }
+
 
 }
